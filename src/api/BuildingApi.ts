@@ -39,7 +39,7 @@ export type BuildingResponse = Readonly<{
 }>
 
 export type BuildingShortResponse = Readonly<{
-    buildingId: number;
+    buildingID: number;
     address: AddressResponse;
 }>
 

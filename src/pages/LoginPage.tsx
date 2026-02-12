@@ -19,7 +19,7 @@ export default function LoginPage() {
             localStorage.setItem("userId", response.id.toString())
             localStorage.setItem("role", response.role);
 
-            navigate(`/user/${response.id}`);
+            navigate(`/users/${response.id}`);
         } catch {
             setError("Błąd logowania");
         }

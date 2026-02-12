@@ -7,7 +7,13 @@ import type {BuildingShortResponse} from "./BuildingApi.ts";
 import type {EventShortResponse} from "./EventApi.ts";
 
 const API_URL = "http://localhost:8080";
-type Role = Readonly<'HOUSING_MANAGER' | 'BUILDING_MANAGER' | 'RESIDENT'>
+export type Role = Readonly<'HOUSING_MANAGER' | 'BUILDING_MANAGER' | 'RESIDENT'>
+
+export const roleLabel: Record<Role, string> = {
+    HOUSING_MANAGER: "Zarządca wspólnoty",
+    BUILDING_MANAGER: "Zarządca budynku",
+    RESIDENT: "Mieszkaniec"
+}
 
 export type UserEditRequest = {
     name: string;
